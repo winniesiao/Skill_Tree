@@ -4,14 +4,14 @@
 
 html,
 body {
-    height: 100%;
-    width: 100%;
+    // height: 100%;
+    // width: 100%;
     font-family: Microsoft JhengHei;
 }
 
 .container {
     min-width: 1200px;
-    max-width: 2000px;
+    width: 2000px;
     height: 2000px;
     background-image: url("./image/img_footer.png"), linear-gradient(#301A3B, #10030A);
     background-size: contain;
@@ -19,13 +19,6 @@ body {
     background-position: bottom;
     margin: 0 auto;
     position: relative;
-}
-
-footer {
-    width: 100%;
-    padding-bottom: 100%;
-    position: absolute;
-    bottom: 0px;
 }
 
 .skillButton {
@@ -176,8 +169,87 @@ footer {
     top: 746.4px;
 }
 
+.skillBox {
+    position: relative;
+    .monocatIcon {
+        position: absolute;
+        top: 920px;
+        left: 30px;
+        z-index: 20;
+    }
+    .skillInfo {
+        box-sizing: border-box;
+        width: 1200px;
+        height: 245px;
+        padding: 30px 30px 30px 60px;
+        background-color: #FFFFFF;
+        border: 10px solid #0093FF;
+        border-radius: 65px;
+        position: absolute;
+        top: 987px;
+        left: 188px;
+    }
+    .skillInfo {
+        div {
+            float: left;
+        }
+    }
+    .skillPic {
+        box-sizing: border-box;
+        width: 15%;
+        padding: 10px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.skillTxt {
+    box-sizing: border-box;
+    width: 85%;
+    padding: 10px;
+    h3 {
+        font-size: 35px;
+        font-weight: bolder;
+        color: #505050;
+        line-height: 1.5;
+    }
+    p {
+        font-size: 35px;
+        font-weight: bold;
+        color: #7B7B7B;
+        line-height: 1.3;
+    }
+}
+
+.clearfix::after {
+    content: '';
+    width: 100%;
+    height: 0px;
+    display: block;
+    clear: both;
+}
+
 .hexcatIcon {
     position: absolute;
     top: 1475.49px;
     left: 46.6px;
+}
+
+.rocket {
+    position: absolute;
+    top: 1330.49px;
+    left: 1400px;
+}
+
+.padora {
+    position: absolute;
+    top: 960px;
+    left: 1580px;
+}
+
+.planet {
+    position: absolute;
+    top: 84px;
+    left: 170px;
 }
